@@ -1,0 +1,26 @@
+<h2 style="text-align: center; color: teal">All Publish Review</h2>
+<div class="row">
+  {{#each reviews}}
+  <div class="col s12 m4">
+    <div class="card blue-grey darken-1">
+      <div class="card-image">
+        {{{editIcon writer ../user _id}}}
+      </div>
+      <div class="card-content white-text">
+        <h5 class="card-title" style="color:silver">Movie:&nbsp;{{title}}</h5>
+        <p>{{stringTags (truncate body 100)}}</p>
+        <br>
+        <div class="chip">
+          <img src="{{writer.image}}" alt="">
+          <a href="/reviews/user/{{writer._id}}">{{writer.displayName}}</a>
+        </div>
+      </div>
+      <div class="card-action center-align">
+        <a href="/reviews/{{_id}}" class="btn grey">Read more</a>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <p>No review to display</p>
+  {{/each}}
+</div>

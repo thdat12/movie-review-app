@@ -1,0 +1,52 @@
+p{
+  margin: 10px 0 !important;
+}
+
+.login-container{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-float{
+  float: left;
+  margin-right: 10px;
+}
+
+.dashboard-title{
+  padding: auto;
+  margin-bottom: auto;
+}
+
+.dashboard-title h1 {
+  text-align: center;
+  color: teal;
+}
+
+.dashboard-title h5 {
+  margin-bottom: 1.5rem;
+  font-style: oblique;
+}
+
+.dashboard-title h5 span {
+  font-weight: bold;
+}
+
+.sidenav li a:hover {
+  color: teal;
+}
+
+.avatar{
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.display-name{
+  font-size: 24px;
+  font-style: bold;
+  margin-left: 1.5rem;
+}
+
+.img-small{
+  width: 120px;
+}
